@@ -1,0 +1,39 @@
+{
+  "name": "HeroSlide",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "Headline do slide"
+    },
+    "subtitle": {
+      "type": "string",
+      "description": "Subt\u00edtulo do slide"
+    },
+    "image_url": {
+      "type": "string",
+      "description": "URL da imagem do slide"
+    },
+    "cta_text": {
+      "type": "string",
+      "description": "Texto do bot\u00e3o principal"
+    },
+    "cta_link": {
+      "type": "string",
+      "description": "Link do bot\u00e3o principal"
+    },
+    "order": {
+      "type": "number",
+      "description": "Ordem de exibi\u00e7\u00e3o"
+    },
+    "active": {
+      "type": "boolean",
+      "default": true,
+      "description": "Slide ativo"
+    }
+  },
+  "required": [
+    "title",
+    "image_url"
+  ]
+}

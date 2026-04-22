@@ -1,0 +1,31 @@
+{
+  "name": "ScheduleBlock",
+  "type": "object",
+  "properties": {
+    "professional_id": {
+      "type": "string",
+      "description": "ID da profissional"
+    },
+    "professional_name": {
+      "type": "string"
+    },
+    "date": {
+      "type": "string",
+      "format": "date",
+      "description": "Data do bloqueio"
+    },
+    "time": {
+      "type": "string",
+      "description": "Hor\u00e1rio bloqueado (ex: 14:00)"
+    },
+    "reason": {
+      "type": "string",
+      "description": "Motivo do bloqueio (opcional)"
+    }
+  },
+  "required": [
+    "professional_id",
+    "date",
+    "time"
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "name": "PortfolioItem",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "T\u00edtulo da imagem"
+    },
+    "image_url": {
+      "type": "string",
+      "description": "URL da imagem"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "alongamento",
+        "esmaltacao",
+        "nail_art",
+        "blindagem",
+        "manutencao",
+        "gel"
+      ],
+      "description": "Categoria"
+    },
+    "featured": {
+      "type": "boolean",
+      "default": false,
+      "description": "Destaque (imagem maior)"
+    },
+    "order": {
+      "type": "number"
+    },
+    "active": {
+      "type": "boolean",
+      "default": true
+    }
+  },
+  "required": [
+    "image_url"
+  ]
+}

@@ -1,0 +1,28 @@
+Professional{
+  "name": "Professional",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Nome da profissional"
+    },
+    "photo_url": {
+      "type": "string",
+      "description": "Foto"
+    },
+    "specialty": {
+      "type": "string",
+      "description": "Especialidade"
+    },
+    "active": {
+      "type": "boolean",
+      "default": true
+    },
+    "order": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "name"
+  ]
+}

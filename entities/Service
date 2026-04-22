@@ -1,0 +1,50 @@
+{
+  "name": "Service",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Nome do servi\u00e7o"
+    },
+    "description": {
+      "type": "string",
+      "description": "Descri\u00e7\u00e3o do servi\u00e7o"
+    },
+    "duration": {
+      "type": "string",
+      "description": "Tempo m\u00e9dio (ex: 1h30)"
+    },
+    "price_from": {
+      "type": "number",
+      "description": "Pre\u00e7o a partir de"
+    },
+    "image_url": {
+      "type": "string",
+      "description": "Imagem do servi\u00e7o"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "manicure",
+        "blindagem",
+        "gel",
+        "alongamento",
+        "nail_art",
+        "manutencao",
+        "spa"
+      ],
+      "description": "Categoria do servi\u00e7o"
+    },
+    "order": {
+      "type": "number",
+      "description": "Ordem de exibi\u00e7\u00e3o"
+    },
+    "active": {
+      "type": "boolean",
+      "default": true
+    }
+  },
+  "required": [
+    "name"
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "name": "Testimonial",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Nome da cliente"
+    },
+    "text": {
+      "type": "string",
+      "description": "Depoimento"
+    },
+    "rating": {
+      "type": "number",
+      "description": "Nota de 1 a 5"
+    },
+    "photo_url": {
+      "type": "string",
+      "description": "Foto da cliente"
+    },
+    "service": {
+      "type": "string",
+      "description": "Servi\u00e7o realizado"
+    },
+    "order": {
+      "type": "number"
+    },
+    "active": {
+      "type": "boolean",
+      "default": true
+    }
+  },
+  "required": [
+    "name",
+    "text"
+  ]
+}

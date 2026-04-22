@@ -1,0 +1,44 @@
+{
+  "name": "CourseInquiry",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Nome"
+    },
+    "phone": {
+      "type": "string",
+      "description": "Telefone"
+    },
+    "city": {
+      "type": "string",
+      "description": "Cidade"
+    },
+    "level": {
+      "type": "string",
+      "enum": [
+        "iniciante",
+        "ja_atua"
+      ],
+      "description": "N\u00edvel atual"
+    },
+    "question": {
+      "type": "string",
+      "description": "D\u00favida principal"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "novo",
+        "em_contato",
+        "convertido",
+        "arquivado"
+      ],
+      "default": "novo"
+    }
+  },
+  "required": [
+    "name",
+    "phone"
+  ]
+}
